@@ -1,0 +1,3 @@
+include filespec README
+recursive-include specpy *.py
+recursive-include doc *.rst
