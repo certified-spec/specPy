@@ -1,4 +1,4 @@
-The **specpy** python package contains different modules providing functionality related 
+The **specPy** python package contains different modules providing functionality related 
 with the **spec** software (by Certified Scientific Software)
 
 **spec** is an application by *Certified Scientific Software* 

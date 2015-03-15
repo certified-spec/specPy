@@ -43,8 +43,8 @@ A number of tools exist supporting this format.
     Software as explained in the contact page in http://www.certif.com/contact/
 
 ``specfile`` tool and `filespec` python module
-    ``specfile`` is a command line tool distributed with the ``specpy`` python
-    package. http://github.com/certified-spec/specpy
+    ``specfile`` is a command line tool distributed with the ``specPy`` python
+    package. http://github.com/certified-spec/specPy
 
     ``specfile`` tool can list scans in file and extract scans to separate lines
     providing **spec** data format or other file output formats
@@ -52,7 +52,7 @@ A number of tools exist supporting this format.
     The `filespec` python module provides functionality to load scan data  and their
     metadata so that it can be included in python scripts and applications.
 
-    The `specpy` python package is distributed free of charge.
+    The `specPy` python package is distributed free of charge.
 
 
 `PyMca`

@@ -2,7 +2,7 @@ from distutils.core import setup
 
 files = ["*.py"]
 
-setup(name="specpy",
+setup(name="specPy",
    version = "1.0",
    description = """
 python package containing different modules providing functionality related 
@@ -11,8 +11,8 @@ with the spec software (by Certified Scientific Software)
    author = "Bixente Rey Bakaikoa",
    author_email = "txo@txolutions.com",
    url = "http://www.certif.com",
-   packages = ['specpy'],
-   package_data = {'specpy': files},  
+   packages = ['specPy'],
+   package_data = {'specPy': files},  
    scripts = {"specfile"}, 
    long_description = """
 
