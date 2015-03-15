@@ -108,6 +108,8 @@ in a file but it could also appear somewhere else inside the file.
 The information in a file block concerns all the scan blocks
 in the file or all the scans until a new file block is found.
 
+File blocks
+--------------
 The following control lines can be found in a file block:
 
 ``#F *filename*``
@@ -130,7 +132,7 @@ The following control lines can be found in a file block:
          #C fourc  User = opid56 
 
 ``#O%d *motor name*``
-     Indicates the name of the motors in the **spec** application when the file was
+     indicates the name of the motors in the **spec** application when the file was
      created. 
      A ``#O`` can contain up to 8 motor names
      Th ``O``  in ``#O`` is followed by a number indicating the line number.  This
@@ -143,7 +145,7 @@ The following control lines can be found in a file block:
          #O1 PSlit Down  PSlit Off  PSlit Gap  
 
 ``#o%d *motor mnemonic*``
-     Indicates the mnemonic of the motors in the **spec** application when the file was
+     indicates the mnemonic of the motors in the **spec** application when the file was
      created. 
      As with ``#O``  lines a ``#o`` can contain up to 8 motor mnemonics.
      Th ``o``  in ``#o`` is followed by a number indicating the line number.  This
@@ -154,8 +156,21 @@ The following control lines can be found in a file block:
          #o1 psd pso psg 
 
 ``#J%d *counter name*``
-``#j%d *counter mnemonic*``
+     indicates the name of the counters in the **spec** application when the file was
+     created. 
+     A ``#J`` can contain up to 8 counter names
+     Th ``J``  in ``#J`` is followed by a number indicating the line number.  
+     To allow for counter names including white spaces, the delimiter for counter names 
+     in ``#J`` lines is a set of two blank spaces. 
 
+``#j%d *counter mnemonic*``
+     indicates the mnemonic of the counters in the **spec** application when the file was
+     created. 
+     A counter mnemonic can not contain blank spaces. The delimiter between counter mnemonics
+     in a line is a single blank space.
+
+Scan blocks
+--------------
 Scan blocks are started by the ``#S`` notation in a control line.
 Scan numbers are determined by the ``#S`` lines in the file.  
 The file position number is the sequence position
