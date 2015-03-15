@@ -213,7 +213,7 @@ Several scans with the same number can exist in a file.
      of MCA data lines. In the following example: ::
         #@MCA %16C
      the format indicates that MCA data lines will contain 16 columns of data followed
-     by a continuation character (the ``\\`` character).
+     by a continuation character (the ``\`` character).
 
 ``#@CALIB *a b c*``
      gives calibration factors for MCA data.
